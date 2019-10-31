@@ -10,7 +10,7 @@ namespace ConsoleApp2
     {
         public static void Main(string[] args)
         {
-            int[] arr = { 1, 8, 7, 3 };//change it
+            int[] arr = { -3, 8, 4 };//change it
             int[] sorted = SortArray(arr);
             printArray(arr);
             printArray(sorted);

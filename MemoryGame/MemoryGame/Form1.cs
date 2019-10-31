@@ -118,6 +118,8 @@ namespace MemoryGame
             //VICTOIRE
             if (m_CountTrue == CARD_NUMBER)
             {
+
+                pictureBox9.Visible = true;               
                 MessageBox.Show("Winnnnnnnnnnnnnnnn!!!!");
             }
         }
@@ -162,5 +164,6 @@ namespace MemoryGame
             return true;
         }
 
+        
     }
 }
