@@ -12,7 +12,9 @@ namespace ConsoleApp2
         {
             int[] arr = { 1, 8, 7, 3 };//change it
             int[] sorted = SortArray(arr);
-            Console.WriteLine(sorted);
+            printArray(arr);
+            printArray(sorted);
+
         }
 
         static int[] SortArray(int[] arr)
@@ -32,4 +34,22 @@ namespace ConsoleApp2
             //find min that large or equal than something 
             //put in the first in the sorted array 
         }
+
+        static int FindMin(int[] arr, int x)
+        {
+            int ans = int.MaxValue;
+            for (int i = 0; i < arr.Length; i++)
+                if (arr[i] < ans && arr[i] > x)
+                    ans = arr[i];
+            return ans;
+        }
+
+        static void printArray(int[] arr)
+        {
+            Console.WriteLine("[{0}]", string.Join(", ", arr));
+
+        }
+
     }
+}
+
