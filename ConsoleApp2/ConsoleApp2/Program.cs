@@ -10,10 +10,15 @@ namespace ConsoleApp2
     {
         public static void Main(string[] args)
         {
-            int[] arr = { -3, 8, 4 };//change it
-            int[] sorted = SortArray(arr);
-            printArray(arr);
-            printArray(sorted);
+            //int[] arr = { -3, 8, 4 };//change it
+            //int[] sorted = SortArray(arr);
+            //printArray(arr);
+            //printArray(sorted);
+            Console.WriteLine("Plese Enter a number:" );
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine($"x = {x}");
+            Console.WriteLine($"PoliNum({x}) = {PoliNum(x)}");
+
 
         }
 
@@ -49,6 +54,50 @@ namespace ConsoleApp2
             Console.WriteLine("[{0}]", string.Join(", ", arr));
 
         }
+
+
+
+
+
+        private static bool PoliNum(int num)
+        {
+            int countDigit = 0;
+            int x = 1;
+            int num_temp = num;
+            int left_digit, rigth_digit; 
+
+            //how much digit
+            while (num_temp > 0)
+            {
+                num_temp /= 10;
+                if (num_temp > 0)
+                    countDigit++;
+            }
+            //digit = 3
+            for (int i = 0; i < countDigit; i++)
+            {
+                x = x * 10;
+            }
+
+            while(num > 0)
+            {
+                left_digit = num / x;
+                rigth_digit = num % 10;
+                if (rigth_digit != left_digit)  
+                {
+                    return false;
+                }
+                else
+                {
+                    num %= x;
+                    x /= 100;
+                    num /= 10;
+                }
+            }
+            return true;
+        }
+
+
 
     }
 }

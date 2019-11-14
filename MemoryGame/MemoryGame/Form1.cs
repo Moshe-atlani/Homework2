@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MemoryGame.Properties;
 
-namespace MemoryGame
+namespace MemoryGameMosheAtlani
 {
     public partial class Form_MemoryGame : Form
     {
@@ -118,9 +118,9 @@ namespace MemoryGame
             //VICTOIRE
             if (m_CountTrue == CARD_NUMBER)
             {
-
                 pictureBox9.Visible = true;               
                 MessageBox.Show("Winnnnnnnnnnnnnnnn!!!!");
+                button1.Visible = true;
             }
         }
 
@@ -164,6 +164,9 @@ namespace MemoryGame
             return true;
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }
