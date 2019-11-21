@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    class Polindrom
+    class student
     {
+        private string name;
+
         private static bool PoliNum(int num)
         {
             int countDigit = 0, x = 1, num2 = num, max, min;
