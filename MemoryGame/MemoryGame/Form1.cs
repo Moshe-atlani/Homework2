@@ -59,7 +59,7 @@ namespace MemoryGameMosheAtlani
         private void pictureBox_Card_Click(object sender, EventArgs e)
         {
             PictureBox pictureBox = sender as PictureBox;
-
+            
             //k = a la place dans le מערך qui correspond au bon PictureBox
             //PictureBox3 ---> k = 2
             string picName = pictureBox.Name;

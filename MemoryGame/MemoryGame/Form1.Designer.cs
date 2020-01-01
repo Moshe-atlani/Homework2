@@ -59,9 +59,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::MemoryGame.Properties.Resources.test;
-            this.pictureBox9.Location = new System.Drawing.Point(201, 123);
+            this.pictureBox9.Location = new System.Drawing.Point(1318, 279);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(1155, 704);
+            this.pictureBox9.Size = new System.Drawing.Size(292, 313);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
