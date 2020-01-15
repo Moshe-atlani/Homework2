@@ -28,140 +28,140 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox02 = new System.Windows.Forms.PictureBox();
+            this.pictureBox01 = new System.Windows.Forms.PictureBox();
+            this.pictureBox00 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox00)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox9
+            // pictureBox22
             // 
-            this.pictureBox9.Image = global::morpion.Properties.Resources.pic_white;
-            this.pictureBox9.Location = new System.Drawing.Point(507, 419);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(184, 154);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 9;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.Click_Pic);
+            this.pictureBox22.Image = global::morpion.Properties.Resources.pic_white;
+            this.pictureBox22.Location = new System.Drawing.Point(507, 419);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(184, 154);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox22.TabIndex = 9;
+            this.pictureBox22.TabStop = false;
+            this.pictureBox22.Click += new System.EventHandler(this.Click_Pic);
             // 
-            // pictureBox8
+            // pictureBox21
             // 
-            this.pictureBox8.Image = global::morpion.Properties.Resources.pic_white;
-            this.pictureBox8.Location = new System.Drawing.Point(269, 419);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(184, 154);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 8;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.Click_Pic);
+            this.pictureBox21.Image = global::morpion.Properties.Resources.pic_white;
+            this.pictureBox21.Location = new System.Drawing.Point(269, 419);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(184, 154);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox21.TabIndex = 8;
+            this.pictureBox21.TabStop = false;
+            this.pictureBox21.Click += new System.EventHandler(this.Click_Pic);
             // 
-            // pictureBox7
+            // pictureBox20
             // 
-            this.pictureBox7.Image = global::morpion.Properties.Resources.pic_white;
-            this.pictureBox7.Location = new System.Drawing.Point(32, 419);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(184, 154);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.Click_Pic);
+            this.pictureBox20.Image = global::morpion.Properties.Resources.pic_white;
+            this.pictureBox20.Location = new System.Drawing.Point(32, 419);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(184, 154);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox20.TabIndex = 7;
+            this.pictureBox20.TabStop = false;
+            this.pictureBox20.Click += new System.EventHandler(this.Click_Pic);
             // 
-            // pictureBox6
+            // pictureBox12
             // 
-            this.pictureBox6.Image = global::morpion.Properties.Resources.pic_white;
-            this.pictureBox6.Location = new System.Drawing.Point(507, 234);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(184, 154);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 6;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.Click_Pic);
+            this.pictureBox12.Image = global::morpion.Properties.Resources.pic_white;
+            this.pictureBox12.Location = new System.Drawing.Point(507, 234);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(184, 154);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 6;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.Click_Pic);
             // 
-            // pictureBox5
+            // pictureBox11
             // 
-            this.pictureBox5.Image = global::morpion.Properties.Resources.pic_white;
-            this.pictureBox5.Location = new System.Drawing.Point(269, 221);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(184, 154);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.Click_Pic);
+            this.pictureBox11.Image = global::morpion.Properties.Resources.pic_white;
+            this.pictureBox11.Location = new System.Drawing.Point(269, 221);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(184, 154);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 5;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.Click_Pic);
             // 
-            // pictureBox4
+            // pictureBox10
             // 
-            this.pictureBox4.Image = global::morpion.Properties.Resources.pic_white;
-            this.pictureBox4.Location = new System.Drawing.Point(32, 221);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(184, 154);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.Click_Pic);
+            this.pictureBox10.Image = global::morpion.Properties.Resources.pic_white;
+            this.pictureBox10.Location = new System.Drawing.Point(32, 221);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(184, 154);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 4;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.Click_Pic);
             // 
-            // pictureBox3
+            // pictureBox02
             // 
-            this.pictureBox3.Image = global::morpion.Properties.Resources.pic_white;
-            this.pictureBox3.Location = new System.Drawing.Point(507, 30);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(184, 154);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.Click_Pic);
+            this.pictureBox02.Image = global::morpion.Properties.Resources.pic_white;
+            this.pictureBox02.Location = new System.Drawing.Point(507, 30);
+            this.pictureBox02.Name = "pictureBox02";
+            this.pictureBox02.Size = new System.Drawing.Size(184, 154);
+            this.pictureBox02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox02.TabIndex = 3;
+            this.pictureBox02.TabStop = false;
+            this.pictureBox02.Click += new System.EventHandler(this.Click_Pic);
             // 
-            // pictureBox2
+            // pictureBox01
             // 
-            this.pictureBox2.Image = global::morpion.Properties.Resources.pic_white;
-            this.pictureBox2.Location = new System.Drawing.Point(260, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(184, 154);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.Click_Pic);
+            this.pictureBox01.Image = global::morpion.Properties.Resources.pic_white;
+            this.pictureBox01.Location = new System.Drawing.Point(260, 17);
+            this.pictureBox01.Name = "pictureBox01";
+            this.pictureBox01.Size = new System.Drawing.Size(184, 154);
+            this.pictureBox01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox01.TabIndex = 2;
+            this.pictureBox01.TabStop = false;
+            this.pictureBox01.Click += new System.EventHandler(this.Click_Pic);
             // 
-            // pictureBox1
+            // pictureBox00
             // 
-            this.pictureBox1.Image = global::morpion.Properties.Resources.pic_white;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 154);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.Click_Pic);
+            this.pictureBox00.Image = global::morpion.Properties.Resources.pic_white;
+            this.pictureBox00.Location = new System.Drawing.Point(32, 30);
+            this.pictureBox00.Name = "pictureBox00";
+            this.pictureBox00.Size = new System.Drawing.Size(184, 154);
+            this.pictureBox00.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox00.TabIndex = 1;
+            this.pictureBox00.TabStop = false;
+            this.pictureBox00.Click += new System.EventHandler(this.Click_Pic);
             // 
             // groupBox1
             // 
             this.groupBox1.BackgroundImage = global::morpion.Properties.Resources.grille_morpion;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Controls.Add(this.pictureBox9);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.pictureBox8);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.pictureBox7);
-            this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.pictureBox6);
-            this.groupBox1.Controls.Add(this.pictureBox4);
+            this.groupBox1.Controls.Add(this.pictureBox11);
+            this.groupBox1.Controls.Add(this.pictureBox22);
+            this.groupBox1.Controls.Add(this.pictureBox00);
+            this.groupBox1.Controls.Add(this.pictureBox21);
+            this.groupBox1.Controls.Add(this.pictureBox01);
+            this.groupBox1.Controls.Add(this.pictureBox20);
+            this.groupBox1.Controls.Add(this.pictureBox02);
+            this.groupBox1.Controls.Add(this.pictureBox12);
+            this.groupBox1.Controls.Add(this.pictureBox10);
             this.groupBox1.Location = new System.Drawing.Point(151, 62);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(740, 595);
@@ -176,31 +176,31 @@
             this.ClientSize = new System.Drawing.Size(1453, 829);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = "משה-רפאל";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox00)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox00;
+        private System.Windows.Forms.PictureBox pictureBox01;
+        private System.Windows.Forms.PictureBox pictureBox02;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox20;
+        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.PictureBox pictureBox22;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }
