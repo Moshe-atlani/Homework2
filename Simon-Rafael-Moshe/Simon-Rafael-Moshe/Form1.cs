@@ -12,11 +12,11 @@ namespace Simon_Rafael_Moshe
 {
     public partial class Form1 : Form
     {
-        private Color[] arr_colors = new Color[4];
-        private Color[] arr_user_check = new Color[10];
-        private int i_user = 0;
-        private Color[] arr_suit = new Color[10];
-        private int i = 0;
+        private Color[] arr_colors = new Color[4];//maarah de toute les couleur (jaune, rouge ...)
+        private Color[] arr_user_check = new Color[10];//maarah  de tout les couleur que le jouer a apuiyer(pour verifier s  il a pas rater une coueur )
+        private Color[] arr_suit = new Color[10];//maarah de tout les couleur qu il faut  apuyer(tirer au sort)
+        private int i_user = 0;//la  place du couleur ds les maarah (C PAS TRES CLAIR !)
+        private int i = 0;//le nombre de la place de la prochain couleur 
 
         public Form1()
         {
@@ -56,40 +56,27 @@ namespace Simon_Rafael_Moshe
             pictureBoxVert.BackColor = Color.Green;//Green <--White
         }
 
-        private void button1_Click(object sender, EventArgs e)//bouton de demmarage
+        private void button1_Click(object sender, EventArgs e)//bouton start
         {
-            Color rnd_color = RandomArrayColors();
-
-            timer1.Start();
-            if (rnd_color == Color.RoyalBlue)
-            {
-                pictureBoxBleu.BackColor = Color.White;//bleu--> White
-            }
-            if (rnd_color == Color.Green)
-            {
-                pictureBoxVert.BackColor = Color.White;//Green--> White
-            }
-            if (rnd_color == Color.Brown)
-            {
-                pictureBoxRouge.BackColor = Color.White;//Red--> White
-            }
-            if (rnd_color == Color.Gold)
-            {
-                pictureBoxJaune.BackColor = Color.White;//Yellow--> White
-            }
-            arr_suit[i] = rnd_color;
-            i++;
+            ContinueRnd();
+            groupBox1.Enabled = true;
+            groupBox2.Enabled = true;
+            groupBox3.Enabled = true;
+            groupBox4.Enabled = true;
         }
 
-        private void timer1_Tick_1(object sender, EventArgs e)
+        private void timer1_Tick_1(object sender, EventArgs e)//le temps que la couleur cliniotte
         {
             AllColorWhite();
             timer1.Stop();
         }
-        
+
         private void pictureBoxRouge_Click(object sender, EventArgs e)//A travailler !!!!
         {
-            timer2.Start();
+
+            timer1.Start();
+            //(sender as PictureBox).BackColor = Color.White;//sa pourait renplacai
+            //arr_user_check[i_user] = (sender as PictureBox).BackColor;//sa pourait renplacai
             if ((sender as PictureBox).Name == "pictureBoxBleu")
             {
                 (sender as PictureBox).BackColor = Color.White;
@@ -111,13 +98,50 @@ namespace Simon_Rafael_Moshe
                 arr_user_check[i_user] = Color.Green;
             }
 
-            if (arr_user_check[i_user] != arr_suit[i_user])
+            if (arr_user_check[i_user] != arr_suit[i_user])//good
+            {
                 MessageBox.Show("Looser");
+                groupBox1.Enabled = false;
+                groupBox2.Enabled = false;
+                groupBox3.Enabled = false;
+                groupBox4.Enabled = false;
+            }
+            else
+            {
+                timer2.Start();
+            }
+        }
+        public void ContinueRnd()//fonction qui fait cliker les rnd
+        {
+            Color rnd_color = RandomArrayColors();
+            arr_suit[i] = rnd_color;
+            i++;
+            for (int j = 0; j < i; j++)//ce for est nouveau donc pas sur qu il est bon
+            {
+                timer1.Start();
+                if (rnd_color == Color.RoyalBlue)
+                {
+                    pictureBoxBleu.BackColor = Color.White;//bleu--> White
+                }
+                if (rnd_color == Color.Green)
+                {
+                    pictureBoxVert.BackColor = Color.White;//Green--> White
+                }
+                if (rnd_color == Color.Brown)
+                {
+                    pictureBoxRouge.BackColor = Color.White;//Red--> White
+                }
+                if (rnd_color == Color.Gold)
+                {
+                    pictureBoxJaune.BackColor = Color.White;//Yellow--> White
+                }
+            }
+
         }
 
-        private void timer2_Tick_1(object sender, EventArgs e)
+        private void timer2_Tick(object sender, EventArgs e)
         {
-            AllColorWhite();
+            ContinueRnd();
             timer2.Stop();
         }
     }
