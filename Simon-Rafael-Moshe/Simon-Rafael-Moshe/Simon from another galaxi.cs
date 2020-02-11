@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace Simon_Rafael_Moshe
 {
-    public partial class Form1 : Form
+    public partial class Simon_from_another_galaxi : Form
     {
+
+
+
         private Color[] arr_colors = new Color[4];//maarah de toute les couleur (jaune, rouge ...)
         private Color[] arr_user_check = new Color[10];//maarah  de tout les couleur que le jouer a apuiyer(pour verifier s  il a pas rater une coueur )
         private Color[] arr_suit = new Color[10];//maarah de tout les couleur qu il faut  apuyer(tirer au sort)
@@ -19,12 +22,12 @@ namespace Simon_Rafael_Moshe
         private int i = 0;//le nombre de la place de la prochain couleur 
         private int j = 0;//je l utilise ds ContinueRnd().timer_3 et il est senser etre toujour egal au j du for ds ContinueRnd()
 
-
-        public Form1()
+        public Simon_from_another_galaxi()
         {
             InitializeComponent();
             SetColorToArray();
         }
+
 
         public Color RandomArrayColors()//Random sur une des 4 couleurs
         {
@@ -116,17 +119,24 @@ namespace Simon_Rafael_Moshe
             Color rnd_color = RandomArrayColors();
             arr_suit[i] = rnd_color;
             i++;
-            
+
+            if (i == 1)//sa marche pas 
+                MessageBox.Show("You are lost in the space. Return on the earth NOW !");//sa marche pas 
+            if (i == 5)//sa marche pas 
+                MessageBox.Show("You are on the way to the earth");//sa marche pas 
+            if (i == 10)//sa marche pas 
+                MessageBox.Show("You arrive in the earth good job");//sa marche pas 
+
             for (int j = 0; j < i; j++)//ce for est nouveau donc pas sur qu il est bon
             {//ya un pb de timing
-                //test
+             //test
                 pictureBoxBleu.BackColor = Color.RoyalBlue;
                 pictureBoxVert.BackColor = Color.Green;
                 pictureBoxRouge.BackColor = Color.Brown;
                 pictureBoxJaune.BackColor = Color.Gold;
                 timer1.Start();
                 //timer3.Start();//on na rajouter pour qu il y est un yemps entre chaque click rnd (contibueRnd())
-                
+
                 if (arr_suit[j] == Color.RoyalBlue)
                 {
                     pictureBoxBleu.BackColor = Color.White;//bleu--> White
@@ -146,8 +156,7 @@ namespace Simon_Rafael_Moshe
 
             }
 
-            
-          }
+        }
 
         private void timer1_Tick_1(object sender, EventArgs e)//le temps que la couleur cliniotte
         {
@@ -161,32 +170,15 @@ namespace Simon_Rafael_Moshe
             timer2.Stop();
         }
 
-        private void timer3_Tick(object sender, EventArgs e)//on na rajouter pour qu il y est un yemps entre chaque click rnd (contibueRnd())
+        private void timer3_Tick(object sender, EventArgs e)
         {
-            
-            //j++;
-            //if (arr_suit[j] == Color.RoyalBlue)
-            //{
-            //    pictureBoxBleu.BackColor = Color.White;//bleu--> White
-            //}
-            //if (arr_suit[j] == Color.Green)
-            //{
-            //    pictureBoxVert.BackColor = Color.White;//Green--> White
-            //}
-            //if (arr_suit[j] == Color.Brown)
-            //{
-            //    pictureBoxRouge.BackColor = Color.White;//Red--> White
-            //}
-            //if (arr_suit[j] == Color.Gold)
-            //{
-            //    pictureBoxJaune.BackColor = Color.White;//Yellow--> White
-            //}
-            //if (j < i) //alor c la fin du for ds ContinueRnd()
-            //{
-            //    j = 0;
-            //}
+            if (i == 1)
+                MessageBox.Show("You are lost in the space. Return on the earth NOW !");
+            if (i == 5)
+                MessageBox.Show("You are on the way to the earth");
+            if (i == 10)
+                MessageBox.Show("You arrive in the earth good job");
         }
-
-       
     }
+
 }
