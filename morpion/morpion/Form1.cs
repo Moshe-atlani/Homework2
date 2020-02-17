@@ -60,7 +60,7 @@ namespace morpion
                     {
                         if (IsWin(FormToMatrix()))
                         {
-                            Form_win1 form_win = new Form_win1("o");
+                            Form_win1 form_win = new Form_win1("o");//c la  pour simon 
                             form_win.ShowDialog();
                             groupBox1.Enabled = false;
                         }

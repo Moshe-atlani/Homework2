@@ -120,12 +120,12 @@ namespace Simon_Rafael_Moshe
             arr_suit[i] = rnd_color;
             i++;
 
-            if (i == 1)//sa marche pas 
-                MessageBox.Show("You are lost in the space. Return on the earth NOW !");//sa marche pas 
-            if (i == 5)//sa marche pas 
-                MessageBox.Show("You are on the way to the earth");//sa marche pas 
-            if (i == 10)//sa marche pas 
-                MessageBox.Show("You arrive in the earth good job");//sa marche pas 
+            //if (i == 1)//sa marche pas 
+            //    MessageBox.Show("You are lost in the space. Return on the earth NOW !");//sa marche pas 
+            //if (i == 5)//sa marche pas 
+            //    MessageBox.Show("You are on the way to the earth");//sa marche pas 
+            //if (i == 10)//sa marche pas 
+            //    MessageBox.Show("You arrive in the earth good job");//sa marche pas 
 
             for (int j = 0; j < i; j++)//ce for est nouveau donc pas sur qu il est bon
             {//ya un pb de timing
@@ -172,12 +172,12 @@ namespace Simon_Rafael_Moshe
 
         private void timer3_Tick(object sender, EventArgs e)
         {
-            if (i == 1)
-                MessageBox.Show("You are lost in the space. Return on the earth NOW !");
-            if (i == 5)
-                MessageBox.Show("You are on the way to the earth");
-            if (i == 10)
-                MessageBox.Show("You arrive in the earth good job");
+            //if (i == 1)
+            //    MessageBox.Show("You are lost in the space. Return on the earth NOW !");
+            //if (i == 5)
+            //    MessageBox.Show("You are on the way to the earth");
+            //if (i == 10)
+            //    MessageBox.Show("You arrive in the earth good job");
         }
     }
 

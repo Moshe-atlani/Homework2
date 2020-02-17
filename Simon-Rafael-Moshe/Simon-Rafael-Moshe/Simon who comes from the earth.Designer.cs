@@ -60,6 +60,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox2
             // 
@@ -79,6 +80,7 @@
             this.pictureBoxRouge.Size = new System.Drawing.Size(169, 155);
             this.pictureBoxRouge.TabIndex = 3;
             this.pictureBoxRouge.TabStop = false;
+            this.pictureBoxRouge.Click += new System.EventHandler(this.pictureBoxRouge_Click);
             // 
             // groupBox3
             // 
@@ -98,6 +100,7 @@
             this.pictureBoxJaune.Size = new System.Drawing.Size(169, 155);
             this.pictureBoxJaune.TabIndex = 4;
             this.pictureBoxJaune.TabStop = false;
+            this.pictureBoxJaune.Click += new System.EventHandler(this.pictureBoxRouge_Click);
             // 
             // groupBox4
             // 
@@ -117,6 +120,7 @@
             this.pictureBoxBleu.Size = new System.Drawing.Size(169, 155);
             this.pictureBoxBleu.TabIndex = 5;
             this.pictureBoxBleu.TabStop = false;
+            this.pictureBoxBleu.Click += new System.EventHandler(this.pictureBoxRouge_Click);
             // 
             // groupBox1
             // 
@@ -137,6 +141,7 @@
             this.pictureBoxVert.Size = new System.Drawing.Size(169, 155);
             this.pictureBoxVert.TabIndex = 2;
             this.pictureBoxVert.TabStop = false;
+            this.pictureBoxVert.Click += new System.EventHandler(this.pictureBoxRouge_Click);
             // 
             // pictureBox2
             // 
@@ -145,6 +150,15 @@
             this.pictureBox2.Size = new System.Drawing.Size(38, 655);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Simon_who_comes_from_the_earth
             // 
