@@ -41,6 +41,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRouge)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -160,6 +161,10 @@
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // timer3
+            // 
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
             // Simon_who_comes_from_the_earth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -199,5 +204,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
     }
 }

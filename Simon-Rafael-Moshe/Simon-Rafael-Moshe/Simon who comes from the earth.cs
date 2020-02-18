@@ -19,7 +19,8 @@ namespace Simon_Rafael_Moshe
         private int i_user = 0;//la  place du couleur ds les maarah (C PAS TRES CLAIR !)
         private int i = 0;//le nombre de la place de la prochain couleur 
         private int j = 0;//je l utilise ds ContinueRnd().timer_3 et il est senser etre toujour egal au j du for ds ContinueRnd()
-        private int countClick = 0;//je l utilise ds pictureBoxRouge_Click pour savoir si c le moment d utiliser ContinueRnd (si j ai fini d apuiyer sur toute les la arr_suite )
+        
+        //private int countClick = 0;//je l utilise ds pictureBoxRouge_Click pour savoir si c le moment d utiliser ContinueRnd (si j ai fini d apuiyer sur toute les la arr_suite )
 
 
         public Simon_who_comes_from_the_earth()
@@ -27,6 +28,13 @@ namespace Simon_Rafael_Moshe
             InitializeComponent();
             SetColorToArray();
         }
+
+        public void ReturnToTheBegening()
+        {
+            i_user = 0;
+            i = 0;
+            j = 0;
+        }//very very very good BH
 
         public Color RandomArrayColors()//Random sur une des 4 couleurs
         {
@@ -62,6 +70,7 @@ namespace Simon_Rafael_Moshe
 
         private void button1_Click(object sender, EventArgs e)//bouton start
         {
+            ReturnToTheBegening();
             ContinueRnd();
             groupBox1.Enabled = true;
             groupBox2.Enabled = true;
@@ -103,6 +112,7 @@ namespace Simon_Rafael_Moshe
                 groupBox2.Enabled = false;
                 groupBox3.Enabled = false;
                 groupBox4.Enabled = false;
+
             }
             else if (i - 1 == i_user)//pour attendre de faire un faute ou de finir la suite 
             {
@@ -120,27 +130,23 @@ namespace Simon_Rafael_Moshe
 
             for (int j = 0; j < i; j++)//ce for est nouveau donc pas sur qu il est bon
             {//ya un pb de timing
-             //test
-             //pictureBoxBleu.BackColor = Color.RoyalBlue;
-             //pictureBoxVert.BackColor = Color.Green;
-             //pictureBoxRouge.BackColor = Color.Brown;
-             //pictureBoxJaune.BackColor = Color.Gold;
                 timer1.Start();
+               
                 //timer3.Start();//on na rajouter pour qu il y est un yemps entre chaque click rnd (contibueRnd())
 
                 if (arr_suit[j] == Color.RoyalBlue)//je peu qu on peut renplacer le "arr_suit[j] "par"rnd_color"
                 {
                     pictureBoxBleu.BackColor = Color.White;//bleu--> White
                 }
-                if (arr_suit[j] == Color.Green)
+               else if (arr_suit[j] == Color.Green)
                 {
                     pictureBoxVert.BackColor = Color.White;//Green--> White
                 }
-                if (arr_suit[j] == Color.Brown)
+               else if (arr_suit[j] == Color.Brown)
                 {
                     pictureBoxRouge.BackColor = Color.White;//Red--> White
                 }
-                if (arr_suit[j] == Color.Gold)
+               else if (arr_suit[j] == Color.Gold)
                 {
                     pictureBoxJaune.BackColor = Color.White;//Yellow--> White
                 }
@@ -162,33 +168,10 @@ namespace Simon_Rafael_Moshe
             timer2.Stop();
         }
 
-        private void timer3_Tick(object sender, EventArgs e)//on na rajouter pour qu il y est un yemps entre chaque click rnd (contibueRnd())
+        private void timer3_Tick(object sender, EventArgs e)
         {
 
-            //j++;
-            //if (arr_suit[j] == Color.RoyalBlue)
-            //{
-            //    pictureBoxBleu.BackColor = Color.White;//bleu--> White
-            //}
-            //if (arr_suit[j] == Color.Green)
-            //{
-            //    pictureBoxVert.BackColor = Color.White;//Green--> White
-            //}
-            //if (arr_suit[j] == Color.Brown)
-            //{
-            //    pictureBoxRouge.BackColor = Color.White;//Red--> White
-            //}
-            //if (arr_suit[j] == Color.Gold)
-            //{
-            //    pictureBoxJaune.BackColor = Color.White;//Yellow--> White
-            //}
-            //if (j < i) //alor c la fin du for ds ContinueRnd()
-            //{
-            //    j = 0;
-            //}
         }
-
-
     }
 }
 

@@ -28,6 +28,12 @@ namespace Simon_Rafael_Moshe
             SetColorToArray();
         }
 
+        public void ReturnToTheBegening()
+        {
+            i_user = 0;
+            i = 0;
+            j = 0;
+        }//very very very good BH
 
         public Color RandomArrayColors()//Random sur une des 4 couleurs
         {
@@ -63,6 +69,7 @@ namespace Simon_Rafael_Moshe
 
         private void button1_Click(object sender, EventArgs e)//bouton start
         {
+            ReturnToTheBegening();
             ContinueRnd();
             groupBox1.Enabled = true;
             groupBox2.Enabled = true;
