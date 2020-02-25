@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Media;
 namespace Simon_Rafael_Moshe
 {
     public partial class Simon_who_comes_from_the_earth : Form
@@ -19,7 +20,7 @@ namespace Simon_Rafael_Moshe
         private int i_user = 0;//la  place du couleur ds les maarah (C PAS TRES CLAIR !)
         private int i = 0;//le nombre de la place de la prochain couleur 
         private int j = 0;//je l utilise ds ContinueRnd().timer_3 et il est senser etre toujour egal au j du for ds ContinueRnd()
-        
+       
         //private int countClick = 0;//je l utilise ds pictureBoxRouge_Click pour savoir si c le moment d utiliser ContinueRnd (si j ai fini d apuiyer sur toute les la arr_suite )
 
 
@@ -127,50 +128,71 @@ namespace Simon_Rafael_Moshe
             Color rnd_color = RandomArrayColors();
             arr_suit[i] = rnd_color;
             i++;
+            //jusqu a la c bon
 
-            for (int j = 0; j < i; j++)//ce for est nouveau donc pas sur qu il est bon
-            {//ya un pb de timing
-                timer1.Start();
-               
-                //timer3.Start();//on na rajouter pour qu il y est un yemps entre chaque click rnd (contibueRnd())
 
-                if (arr_suit[j] == Color.RoyalBlue)//je peu qu on peut renplacer le "arr_suit[j] "par"rnd_color"
-                {
-                    pictureBoxBleu.BackColor = Color.White;//bleu--> White
-                }
-               else if (arr_suit[j] == Color.Green)
-                {
-                    pictureBoxVert.BackColor = Color.White;//Green--> White
-                }
-               else if (arr_suit[j] == Color.Brown)
-                {
-                    pictureBoxRouge.BackColor = Color.White;//Red--> White
-                }
-               else if (arr_suit[j] == Color.Gold)
-                {
-                    pictureBoxJaune.BackColor = Color.White;//Yellow--> White
-                }
-
-            }
-
+            AllumeTout();
 
         }
 
-        private void timer1_Tick_1(object sender, EventArgs e)//le temps que la couleur cliniotte
+       public void AllumeTout()
         {
-            AllColorWhite();
-            timer1.Stop();
+            
+                timer3.Start();
+
+                
+
+
+
+            
         }
+
+    
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            ContinueRnd();
-            timer2.Stop();
+            timer3.Start();
+
+            //ContinueRnd();
+            //timer2.Stop();
         }
 
         private void timer3_Tick(object sender, EventArgs e)
         {
+            //Light the current color
+            if (arr_suit[j] == Color.RoyalBlue)//je peu qu on peut renplacer le "arr_suit[j] "par"rnd_color"
+            {
+                pictureBoxBleu.BackColor = Color.White;//bleu--> White
+            }
+            else if (arr_suit[j] == Color.Green)
+            {
+                pictureBoxVert.BackColor = Color.White;//Green--> White
+            }
+            else if (arr_suit[j] == Color.Brown)
+            {
+                pictureBoxRouge.BackColor = Color.White;//Red--> White
+            }
+            else if (arr_suit[j] == Color.Gold)
+            {
+                pictureBoxJaune.BackColor = Color.White;//Yellow--> White
+            }
 
+            timer3.Stop();
+            timer1.Start();
+
+            j++;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SoundPlayer sPayer = new SoundPlayer(@"C:\Users\Moshe\Desktop\workspace\Homework2\Simon-Rafael-Moshe\sound114.wav");
+            sPayer.Play();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            AllColorWhite();
+            
         }
     }
 }
