@@ -12,10 +12,10 @@ namespace ExpoDevoir
         {
         }
 
-        static bool IsGood(BinNode<int> t)//Tres bien
+        static bool IsGood(BinNode<int> t)//Check if the number of the  two "Elime" and the "Father" is "< 10"
         {
            
-            if (t.GetRight().GetValue() < 10 && t.GetLeft().GetValue() < 10 && t.GetValue() < 10)//Check if the number is good
+            if (t.GetRight().GetValue() < 10 && t.GetLeft().GetValue() < 10 && t.GetValue() < 10)
             {
                 return true;
             }
@@ -24,73 +24,50 @@ namespace ExpoDevoir
         }
 
         
-        static bool Test2(BinNode<int> t)//Tres bien
+        static bool IsTreePele(BinNode<int> t)
         {
-            bool b1 = true, b2 = true;
-            if (t.GetRight().GetRight() == null && t.GetRight().GetLeft() == null && t.GetLeft().GetRight() == null && t.GetLeft().GetLeft() == null)
-            {
-                if (!IsGood(t))
-                    return false;
-            }
-            else
-            {
-
-                if (t.GetRight() != null)
+            bool bRight = true, bLeft = true;
+            
+            
+                //check if t.GetRight() and t.GetLeft() are "Elime" 
+                if (t.GetRight().GetRight() == null && t.GetRight().GetLeft() == null && t.GetLeft().GetRight() == null && t.GetLeft().GetLeft() == null)
                 {
-                   b1 = Test2(t.GetRight());
-                }
-                if (t.GetLeft() != null)
-                {
-                  b2 =  Test2(t.GetLeft());
-                }
-                    return true == b1 == b2;
-            }
-
-            return true;
-
-        }
-        static bool IsTreePele(BinNode<int> t)//bof
-        {
-            bool IsGoodTree = false;
-
-            if (t.GetRight().GetRight() == null && t.GetRight().GetLeft() == null && t.GetLeft().GetRight() == null && t.GetLeft().GetLeft() == null)
-            {
-                if (t.GetRight().GetValue() < 10 && t.GetLeft().GetValue() < 10 && t.GetValue() < 10)//Check if the number is good
-                {
-                    IsGoodTree = true;
+                    if (!IsGood(t))
+                        return false;
                 }
                 else
                 {
-                    return false;
+
+                    if (t.GetRight() != null)
+                    {
+                        bRight = IsTreePele(t.GetRight());
+                    }
+                    if (t.GetLeft() != null)
+                    {
+                        bLeft = IsTreePele(t.GetLeft());
+                    }
+                    return true == bRight == bLeft;
                 }
-            }
-            else if (t.GetRight() != null)
-            {
-                IsTreePele(t.GetRight());
-                if (t.GetLeft() != null)
-                    IsTreePele(t.GetLeft());
-            }
+            
+            return true;
 
-            return IsGoodTree;
         }
-
-        static void Test(BinNode<int> t)//pas mal
+        
+        static bool Foo1(BinNode<char> t)
         {
-            if (t.GetRight().GetRight() != null)
-            { Test(t.GetRight()); }
-            if (t.GetRight().GetLeft() != null)
-            { Test(t.GetRight()); }
-
-            if (t.GetLeft().GetRight() != null)
-            { Test(t.GetLeft()); }
-            if (t.GetLeft().GetLeft() != null)
-            { Test(t.GetLeft()); }
-
-            if (t.GetRight().GetRight() == null && t.GetRight().GetLeft() == null && t.GetLeft().GetRight() == null && t.GetLeft().GetLeft() == null)
-                if (!IsGood(t))
-                    Console.WriteLine("Is not a tree pele !");
-
+            if(t !=  null)
+            {
+                if(t.GetLeft() != null && t.GetRight() != null)
+                    if
+            }
         }
 
+        static bool Foo2(BinNode<char> t)
+        {
+            if(t != null)
+            {
+                if(t.GetLeft().HasLeft() || t.GetLeft().HasRight())
+            }
+        }
     }
 }
